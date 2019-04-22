@@ -30,7 +30,7 @@ public class ConnectionManagerJdbcImpl implements ConnectionManager {
             connection = DriverManager.getConnection(
                     "jdbc:postgresql://localhost:5433/result",
                     "postgres",
-                    "122544");
+                    "postgres");
 
         } catch (ClassNotFoundException | SQLException e) {
             LOGGER.error(e.getMessage() + " Database connection error\n");
